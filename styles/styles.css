@@ -1,0 +1,81 @@
+html, body, h1, p, form {
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    font-size: 18px;
+}
+
+.container {
+    width: 70%;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+header {
+    background-color: antiquewhite;
+    padding: 1rem 0 ;
+}
+
+main {
+    padding: 2rem 0;
+    background-color: #ff6a67;
+}
+
+main .container {
+    background: #fff;
+    padding: 1rem;
+    border: solid .2rem;
+}
+
+main .columns {
+    display: flex;
+}
+
+.left-column {
+    width: 25%;
+    align-self: center;
+}
+
+img {
+    width: 60%;
+    height: auto;
+    margin-top: 10%;
+    margin-left: 10%;
+}
+
+.right-column {
+    width: 75%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    padding-top: 1rem;
+}
+
+.form-input {
+    display: flex;
+}
+
+.form-input:not(:last-of-type) {
+    padding-bottom: 1rem;
+}
+
+.form-input label,
+.form-input input,
+.form-input select {
+    width: 50%;
+}
+
+.form-input label .small-text {
+    font-size: .6em;
+    color: grey;
+    text-decoration: underline;
+}
